@@ -1,0 +1,47 @@
+name: MystickPickaxe
+version: 1.0
+main: org.example.Main
+api-version: 1.19
+depend: [WorldGuard]
+
+commands:
+  wymien:
+    usage: /wymien
+  addcrystal:
+    permission: mp.crystal.addcrystal
+  enchanter:
+    permission: mp.enchanter
+  rozmien:
+    permission: mp.exchange
+  guikrysztal:
+    permission: mp.guikrysztal
+  kupklucz:
+    description: Kupuje klucz
+    usage: /kupklucz
+    permission: mp.buykey
+    permission-message: "&cUpss! &7you don't have permission!."
+    aliases:
+      - kk
+      - buykey
+  getnie:
+    description: Niebisnski kilof
+  upeff:
+    usage: /effup
+  upfor:
+    usage: /upfor
+  amulet:
+    description: Amulety
+  test:
+    usage: /test
+  niebianski:
+    usage: /getnie
+  tradeexp:
+    usage: /tradeexp
+
+
+listeners:
+  - org.example.command.guiCrystal
+  - org.example.command.getMistyk
+  - org.example.Amulety.Mistyk
+  - org.example.command.guiAmulety
+  - org.example.command.mistyk()
