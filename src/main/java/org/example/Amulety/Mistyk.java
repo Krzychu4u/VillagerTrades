@@ -66,7 +66,6 @@ public class Mistyk implements Listener {
             if(player.getWorld().getName().equals("world")) {
                 if (heldItem.getType() == Material.DIAMOND_PICKAXE && Objects.requireNonNull(heldItem.getItemMeta()).hasItemFlag(ItemFlag.HIDE_ATTRIBUTES)) {
                     Block brokenBlock = event.getBlock();
-                    Material blockType = brokenBlock.getType();
                     World world = brokenBlock.getWorld();
 
 
@@ -79,7 +78,7 @@ public class Mistyk implements Listener {
                             //boolean canBreak = query.testState(BukkitAdapter.adapt(brokenBlock.getLocation()), worldGuard.wrapPlayer(player), Flags.BLOCK_BREAK);
 
 
-                            int licznik = 0;
+
 
                             for (int x = -1; x <= 1; x++) {
                                 for (int y = -1; y <= 1; y++) {
@@ -116,7 +115,6 @@ public class Mistyk implements Listener {
                                                     blockToBreak.setType(Material.AIR);
 
                                                     event.getPlayer().giveExp(10);
-                                                    licznik++;
 
                                                 }
                                             } else {
