@@ -135,11 +135,13 @@ public class guiCrystal implements CommandExecutor, Listener {
                     meta.setDisplayName(Color.fix("&7Wymien &d&lkrysztaly &7na &5&lSuperKrysztaly"));
                     meta.addEnchant(Enchantment.DEPTH_STRIDER, 1, false);
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+                    meta.setCustomModelData(10000);
                     break;
                 case ECHO_SHARD:
                     meta.setDisplayName(Color.fix("&7Rozmien &5&lSuperKrysztaly &7na &d&lkrysztaly"));
                     meta.addEnchant(Enchantment.DEPTH_STRIDER, 1, false);
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+                    meta.setCustomModelData(10000);
                     break;
                 case PURPLE_STAINED_GLASS_PANE:
                     meta.setDisplayName(" ");

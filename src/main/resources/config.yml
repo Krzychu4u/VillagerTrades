@@ -7,3 +7,13 @@ eff_max: 30
 name: "&6&lEfficiency"
 #use &lvl to display level of enchant
 lore: "&7>> &aEff &f&lvl &a 500 dirt"
+
+
+#upgrades
+upgrades:
+  fortune:
+    max: 20
+    multiplier: 1,5
+  efficiency:
+    max: 40
+    multiplier: 1,2

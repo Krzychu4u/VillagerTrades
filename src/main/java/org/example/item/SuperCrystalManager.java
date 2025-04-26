@@ -28,6 +28,7 @@ public class SuperCrystalManager {
         meta.setUnbreakable(true); // Sprawia, że item nie ma paska wytrzymałości
         meta.addEnchant(Enchantment.DEPTH_STRIDER, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        meta.setCustomModelData(10000);
         enchantedSuperCrystal.setItemMeta(meta);
 
         inventory.addItem(enchantedSuperCrystal);
